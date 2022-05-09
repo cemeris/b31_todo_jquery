@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ToDo list</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="StorageManager.js"></script>
+
+<main>
+<form action="" id="todo_list_form">
+    <input type="text" name="todo">
+    <button type="submit">add</button>
+    <button type="reset">reset</button>
+</form>
+<ol class="todo_list"></ol>
+</main>
+
+<!-- <script src="StorageManager.js"></script>
+<script src="ToDoElementEditor.js"></script> -->
+<script src="script.js"></script>
+
+<a
+    href="https://paletton.com/#uid=5171f0kllllaFw0g0qFqFg0w0aF"
+    target="_blank"
+    style="position:fixed; bottom: 7px; left:7px; color:#FFF2AA;"
+>colors</a>
+
+<!--
+    Būs divu līmeņu uzdevumi, tas nozīmē ka uzdevumam varēs piešķir apakšuzdevumu.
+    1. ✅ submitojot formu vērtībai ir jāsaglabājas iekš Storage Manager
+        - pārtvert submit notikumu
+    2. ✅ Jāsaglabājas ir tekstam, status
+    3. ✅ Ielādējoties lapai jāizvada storage saturs uzdevumu sarakstā
+    4. ✅ submitojot pievienojas jauna vērtība iekš uzdevumu saraksta.
+
+    ...
+
+    7. ✅ Dzēšanas funkcionalitāte
+        - ✅ Dzēšanas pogas pievienošana
+        - ✅ Klikšķa pārtveršanas uz dzēšanas pogas klikšķi
+        - ✅ Jāizdzēš dati no localStorage (StorageManager)
+        - ✅ Izdēšam datus no saraksta (ToDoElementEditor)
+
+    8. Iespēja pieveinot uzdevumu kā apakšuzdevumu citam pirmā līmeņa uzdevumam
+        - ✅ Izvadīt visas opcijas iekš select elementa
+        - Funkcionalitāte kas ļauj ievieto apakšelementu.
+            * ✅ pievienot apakšuzdevumu iekš storageManager
+            * ✅ izvadīt apakšuzdevumus pārlādējot lapu 
+            * ✅ izvadī† apakšuzdevumus uzdevuma pieveinošanas brīdī
+
+
+    9. Ja dzēšās 1. līmeņa uzdevums, tad izdzēst arī visus apakšuzdevumus.
+    kad dzēš pamatelemetu tad iniciēt apakšelementu izdzēšanu
+
+
+    _______________________________
+    1. Jāizprot uzdevums
+    2. Jautājumi un idejas
+        Q: Kurā brīdī kodam ir jāizpildās?
+        Q: Kas tiks pielietots šajā kodā?
+
+    3. Uzdevuma saskaldīšana
+-->

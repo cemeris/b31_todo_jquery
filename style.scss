@@ -1,0 +1,77 @@
+@function pxToRem($to, $size: 16) {
+    @return $to / $size + 0rem;
+}
+
+body {
+    background: #C76476;
+    background: linear-gradient(149deg, #C76476 35%, #781426 100%);
+    background-repeat: no-repeat;
+    margin:0;
+    min-height:100vh;
+}
+
+p, h1, h2, h3, h4, h5, h6, li, button {
+    color: #801F15;
+}
+
+button {
+    background: #FFE8AA;
+    border:0;
+    border-radius:5px;
+    transition: background 0.5s, color 1s;
+    &:hover {
+        color:#FFE8AA;
+        background: #364F00;
+        transition: background 0.5s, color 1s;
+    }
+}
+
+.todo_list{
+    margin-top:pxToRem(40);
+}
+
+main {
+    width:pxToRem(400);
+    margin:pxToRem(100) auto 0;
+    background: #FFE8AA;
+    padding: pxToRem(30);
+    border-radius: pxToRem(5);
+}
+
+.delete_btn {
+    display: inline-block;
+    width:15px;
+    height:15px;
+    margin-left:7px;
+    text-decoration: none;
+    background: #554800;
+    color: #fff;
+    text-align:center;
+    line-height:15px;
+    border-radius:30%;
+}
+
+// tagname{
+
+// }
+// .class_name{}
+// #by_id{
+
+// }
+
+// [atrribute_name] {}
+// [atrribute_name="searched_value"] {
+
+// }
+
+
+// [class^="icon-"], [class*=" icon-"] {
+
+// }
+
+@media screen and (max-width:700px) {
+    html {
+        font-size:14px;
+    }
+}
+
