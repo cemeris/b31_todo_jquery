@@ -21,7 +21,7 @@ function addElement(parent_id, id, value) {
         .on('click', function(event) {
             event.preventDefault();
             const item = $(this).parent();
-            console.log(item.data());
+            storageManager.delete(item.data('parent_id'), item.data('id'));
             item.remove();
         });
     const item = $('<li></li>')
